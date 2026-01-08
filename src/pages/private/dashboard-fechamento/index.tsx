@@ -1,13 +1,13 @@
+import { useState } from 'react';
 import { PageHeader } from '@/components/layout/PageHeader';
 import { PageContent } from '@/components/layout/PageContent';
 import { LayoutDashboard, Presentation, ChevronLeft, ChevronRight, X } from 'lucide-react';
-import marveeLogo from '@/assets/LogoMarveeLight.png';
 import { Button } from '@/components/ui/button';
-import { useState } from 'react';
 import ChartFaturamento from './faturamento/chartFaturamento';
 import ChartGeracaoCaixa from './geracao-caixa/chartGeracaoCaixa';
 import ChartFaturamentoAcumulado from './faturamento/chartFaturamentoAcumulado';
 import FluxoDeCaixa from './fluxo_de_caixa';
+import logomarcaEscura from '@/assets/logomarcaEscura.svg';
 
 export default function DashboardFechamento() {
   const [isPresentationMode, setIsPresentationMode] = useState(false);
@@ -97,7 +97,7 @@ export default function DashboardFechamento() {
             {/* Logo da Marvee no topo esquerdo */}
             <div className="absolute top-4 left-4 z-20">
               <img 
-                src={marveeLogo} 
+                src={logomarcaEscura} 
                 alt="Marvee Logo" 
                 className="h-14 w-auto"
               />
