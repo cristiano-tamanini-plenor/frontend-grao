@@ -1,0 +1,1 @@
+import{u as s,s as i,r as u,j as e,w as n}from"./index-CBBDF6O0.js";function r(){const{isAuthenticated:t}=s(),a=i();return u.useEffect(()=>{t||a("/login")},[t,a]),e.jsx("div",{className:"flex-1 flex items-center justify-center h-full w-full",children:e.jsx(n,{alt:"TSA Tamanini",className:"w-64 h-auto mx-auto"})})}export{r as default};
