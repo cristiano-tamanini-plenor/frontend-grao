@@ -1,10 +1,14 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '@/modules/auth/hooks/useAuth';
-import Logomarca from '@/components/components/Logomarca';
+import { PageContent } from '@/components/layout/PageContent';
+import { ListHeader } from '@/components/ListHeader';
+import { TrendingUp } from 'lucide-react';
+import InvestmentCards from './investment-cards';
+import InvestmentEvolution from './investment-evolution';
 
 export default function Home() {
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, user, profile } = useAuth();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -13,12 +17,24 @@ export default function Home() {
     }
   }, [isAuthenticated, navigate]);
 
+  // Obtém o nome do usuário (prioriza profile, depois user)
+  const userName = profile?.name || user?.name || 'Usuário';
+
   return (
-    <div className="flex-1 flex items-center justify-center h-full w-full">
-      <Logomarca 
-        alt="Grão Logo" 
-        className="w-64 h-auto mx-auto"
-      />
-    </div>
+    <PageContent>
+      <div className="p-3 space-y-3 w-full h-full overflow-y-auto">
+        {/* Header */}
+        <ListHeader 
+          title={`Olá, ${userName}`}
+          canCreate={false}
+        />
+
+        {/* Cards de Métricas */}
+        <InvestmentCards />
+
+        {/* Gráfico de Evolução dos Investimentos */}
+        <InvestmentEvolution />
+      </div>
+    </PageContent>
   );
 }

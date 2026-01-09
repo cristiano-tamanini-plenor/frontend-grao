@@ -20,10 +20,10 @@ export const lightTheme: ThemeColors = {
   footerHeight: '50',
   footerBgColor: '#F0F0F0',
 
-  // Primary: #27AA80 (161, 63%, 41%)
-  primary: '161 63% 41%',
+  // Primary: #00C092 (166, 100%, 38%)
+  primary: '#00C092',
   primaryForeground: '0 0% 100%',
-  primaryHover: '161 63% 35%',
+  primaryHover: '166 100% 32%',
   
   // Secondary: #5BC0BE (178, 47%, 55%) - Turquesa vibrante
   secondary: '178 47% 55%',
@@ -42,10 +42,10 @@ export const lightTheme: ThemeColors = {
   muted: '210 20% 96%',
   mutedForeground: '209 15% 45%',
   accent: '178 47% 95%',
-  accentForeground: '161 63% 41%',
+  accentForeground: '#00C092',
   border: '210 20% 88%',
   input: '210 20% 88%',
-  ring: '161 63% 41%',
+  ring: '#00C092',
   
   // Actions
   destructive: '0 72% 51%',
@@ -63,26 +63,26 @@ export const lightTheme: ThemeColors = {
   sidebarBg: '#f6f6f9',
   sidebarBackground: '#f6f6f9',
   sidebarForeground: '220 13% 46%',
-  sidebarPrimary: '161 63% 41%',
+  sidebarPrimary: '#00C092',
   sidebarPrimaryForeground: '0 0% 100%',
   sidebarAccent: '220 14% 95%',
   sidebarAccentForeground: '220 13% 46%',
   sidebarBorder: '220 13% 90%',
-  sidebarRing: '161 63% 41%',
-  sidebarItemHover: '161 63% 41%',
+  sidebarRing: '#00C092',
+  sidebarItemHover: '#00C092',
   sidebarSectionLabel: '220 9% 46%',
   sidebarSeparator: '220 13% 88%',
   
   // Gradients
-  gradientPrimary: 'linear-gradient(135deg, hsl(161 63% 41%) 0%, hsl(161 63% 51%) 100%)',
+  gradientPrimary: 'linear-gradient(135deg, hsl(166 100% 38%) 0%, hsl(166 100% 48%) 100%)',
   gradientSecondary: 'linear-gradient(135deg, hsl(178 47% 55%) 0%, hsl(178 47% 65%) 100%)',
-  gradientHero: 'linear-gradient(135deg, hsl(161 63% 41%) 0%, hsl(178 47% 55%) 100%)',
+  gradientHero: 'linear-gradient(135deg, hsl(166 100% 38%) 0%, hsl(178 47% 55%) 100%)',
   
   // Shadows
   shadowSm: '0 1px 2px 0 rgb(0 0 0 / 0.05)',
   shadowMd: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
   shadowLg: '0 10px 15px -3px rgb(0 0 0 / 0.1)',
-  shadowPrimary: '0 10px 30px -10px hsl(161 63% 41% / 0.3)',
+  shadowPrimary: '0 10px 30px -10px hsl(166 100% 38% / 0.3)',
   shadowSecondary: '0 10px 30px -10px hsl(178 47% 55% / 0.3)',
   
   // Other
